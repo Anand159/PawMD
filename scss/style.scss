@@ -1,0 +1,178 @@
+// Color Variables
+$primary: #1D9A01;
+$secondary: #6D47F1;
+$minty-green: #87EF6F57;
+$graphite-gray: #4E4C46;
+$charcoal-black: #181817;
+$dark-gray: #414141;
+$soft-ice: #F6FAF9;
+
+
+//  Theme Color Map
+$custom-theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "minty-green": $minty-green,
+  "graphite-gray": $graphite-gray,
+  "charcoal-black": $charcoal-black,
+  "dark-gray": $dark-gray,
+  "soft-ice": $soft-ice
+);
+
+//  Breakpoints & Containers
+$custom-grid-breakpoints: (
+  xxxl: 1440px
+);
+
+$custom-container-max-widths: (
+  xxxl: 1100px
+);
+
+//  Typography
+$font-size-base: 1rem; // 16px
+$h1-font-size: $font-size-base * 3.5; // 56px
+$h2-font-size: $font-size-base * 3.25; // 52px
+$h3-font-size: $font-size-base * 2.375; // 36px
+$h4-font-size: $font-size-base * 1.75; // 28px
+$h5-font-size: $font-size-base * 1.5; // 24px
+$h6-font-size: $font-size-base * 1.375; // 22px
+$h7-font-size: $font-size-base * 1.25; // 20px
+$h8-font-size: $font-size-base * 1.125; // 18px
+$h9-font-size: $font-size-base * 0.875; // 14px
+
+$custom-font-size: (
+  7: $h7-font-size,
+  8: $h8-font-size,
+  9: $h9-font-size,
+);
+
+//  Fonts
+$font-family-base: "Roboto", sans-serif;
+$headings-font-family: "Federo", sans-serif;
+
+$headings-color: black;
+$headings-font-weight: 400;
+
+
+
+// Spacing
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  10:$spacer * 0.625,
+  // 10px
+  15: $spacer * 0.938,
+  // 15px
+
+  20:$spacer * 1.25,
+  // 20px
+  25:$spacer * 1.563,
+  // 25px
+  40:$spacer * 2.5,
+  // 40px
+  48:$spacer * 3,
+  // 48px
+  55:$spacer * 3.38,
+  // 55px
+  82:$spacer * 5.125,
+  // 82px
+  100: $spacer * 6.25,
+  // 100px
+  126:$spacer * 7.875,
+  134:$spacer * 8.375,
+  // 134px
+
+);
+
+// Bootstrap Functions + Variables
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+
+//  Merge Custom Settings with Bootstrap
+$grid-breakpoints: map-merge($grid-breakpoints, $custom-grid-breakpoints);
+$container-max-widths: map-merge($container-max-widths, $custom-container-max-widths);
+$theme-colors: map-merge($theme-colors, $custom-theme-colors);
+
+//  Bootstrap Core Import
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+//  Custom Styles
+@import './header';
+@import'./footer';
+
+
+
+
+
+
+
+// Custom Utilities
+.font-family-rubik {
+  font-family: "Rubik", sans-serif;
+}
+
+.font-family-federo {
+  font-family: "Federo", sans-serif;
+}
+
+.font-family-roboto {
+  font-family: $font-family-base;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.btn-primary {
+  background-color: $primary !important;
+  padding: 0.875rem 2.688rem !important;
+  color: white;
+  &:hover {
+    background-color: darken($primary, 5%) !important;
+
+  }
+}
+
+.btn-secondary {
+  background-color: #D6FACE !important;
+  padding: 0.875rem 2.688rem !important;
+  color: #124C5F !important;
+
+  &:hover {
+    background-color: darken(#D6FACE, 5%) !important;
+
+  }
+}
+
+
+.z-n-1 {
+  z-index: -1;
+}
+
+// boder-colors
+.border-color-1 {
+  border: 4px solid #1D9A01;
+  width: 117px;
+}
+.border-color-2 {
+  border: 4px solid #3A8DA8;
+  width: 117px;
+}
+
+
+// bg-colors
+.silk-fade{
+    background: linear-gradient(180deg, #FFFFF6 0%, rgba(251, 251, 251, 0) 100%);
+}
+
+.ice-whisper {
+    background: linear-gradient(180deg, #F0F8FF 0%, rgba(240, 248, 255, 0) 100%);
+}
+

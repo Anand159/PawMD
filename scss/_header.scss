@@ -1,0 +1,14 @@
+header .nav-item {
+    padding: 0 1.25rem;
+    .nav-link{
+        padding : 0 1.25rem;
+        font-size: 1.188rem;
+        color: black !important;
+        &:hover{
+            color: $primary !important;  
+        }  
+    }
+}
+
+
+

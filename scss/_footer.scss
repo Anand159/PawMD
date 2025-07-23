@@ -1,0 +1,30 @@
+.subscribe-box {
+  background-color: white;
+  padding: 1.25rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 34px 0px #0000000D;
+  max-width: 751px;
+  max-height: 118px;
+  margin: 1.875rem auto;
+}
+
+.subscribe-box .input-group {
+  flex-grow: 1;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+
+.social-icon {
+  background-color: #87EF6F;
+  padding-inline: 0.875rem;
+  padding-top: 15px;
+  padding-bottom: 8px;
+
+  &:hover {
+    background-color: white;
+  }
+
+}
