@@ -41,13 +41,15 @@ $h4-font-size: $font-size-base * 1.75; // 28px
 $h5-font-size: $font-size-base * 1.5; // 24px
 $h6-font-size: $font-size-base * 1.375; // 22px
 $h7-font-size: $font-size-base * 1.25; // 20px
-$h8-font-size: $font-size-base * 1.125; // 18px
-$h9-font-size: $font-size-base * 0.875; // 14px
+$h8-font-size: $font-size-base * 1.188; // 19px
+$h9-font-size: $font-size-base * 1.125; // 18px
+$h10-font-size: $font-size-base * 0.875; // 14px
 
 $custom-font-size: (
   7: $h7-font-size,
   8: $h8-font-size,
   9: $h9-font-size,
+  10: $h10-font-size,
 );
 
 //  Fonts
@@ -86,6 +88,10 @@ $spacers: (
   134:$spacer * 8.375,
 
 
+  55:$spacer * 3.38,
+
+  60:$spacer * 3.75,
+  
 
 
 
@@ -105,7 +111,7 @@ $spacers: (
   // 40px
   48:$spacer * 3,
   // 48px
-  55:$spacer * 3.38,
+  
   // 55px
   
   // 82px
@@ -136,6 +142,10 @@ $font-sizes: map-merge($font-sizes, $custom-font-size);
 
 //  Custom Styles
 @import './header';
+@import'./hero-banner';
+@import'./service';
+@import'./why-choose-us';
+@import'./what’s-next';
 @import './footer';
 
 
@@ -210,4 +220,7 @@ a {
     background: linear-gradient(180deg, #F0F8FF 0%, rgba(240, 248, 255, 0) 100%);
 }
 
+.bg-light-green-fade {
+    background: linear-gradient(180deg, rgba(135, 239, 111, 0.3) 0%, #FFFFFF 50%);
+}
 
