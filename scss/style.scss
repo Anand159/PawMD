@@ -6,6 +6,8 @@ $graphite-gray: #4E4C46;
 $charcoal-black: #181817;
 $dark-gray: #414141;
 $soft-ice: #F6FAF9;
+$dark-muted: #757777;
+
 
 
 //  Theme Color Map
@@ -16,7 +18,9 @@ $custom-theme-colors: (
   "graphite-gray": $graphite-gray,
   "charcoal-black": $charcoal-black,
   "dark-gray": $dark-gray,
-  "soft-ice": $soft-ice
+  "soft-ice": $soft-ice,
+  "dark-muted": $dark-muted,
+
 );
 
 //  Breakpoints & Containers
@@ -32,7 +36,7 @@ $custom-container-max-widths: (
 $font-size-base: 1rem; // 16px
 $h1-font-size: $font-size-base * 3.5; // 56px
 $h2-font-size: $font-size-base * 3.25; // 52px
-$h3-font-size: $font-size-base * 2.375; // 36px
+$h3-font-size: $font-size-base * 2.375; // 38px
 $h4-font-size: $font-size-base * 1.75; // 28px
 $h5-font-size: $font-size-base * 1.5; // 24px
 $h6-font-size: $font-size-base * 1.375; // 22px
@@ -64,12 +68,36 @@ $spacers: (
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 3,
+
   10:$spacer * 0.625,
-  // 10px
-  15: $spacer * 0.938,
-  // 15px
+  12:$spacer * 0.75,
+  15:$spacer * 0.938,
+  37:$spacer * 2.313,
+  49:$spacer * 3.063,
+  75:$spacer * 4.688, 
 
   20:$spacer * 1.25,
+  28:$spacer * 1.75,
+
+  30:$spacer * 1.875,
+
+  82:$spacer * 5.125,
+
+  134:$spacer * 8.375,
+
+
+
+
+
+
+
+
+
+
+  // 10px
+  
+
+  
   // 20px
   25:$spacer * 1.563,
   // 25px
@@ -79,12 +107,12 @@ $spacers: (
   // 48px
   55:$spacer * 3.38,
   // 55px
-  82:$spacer * 5.125,
+  
   // 82px
   100: $spacer * 6.25,
   // 100px
   126:$spacer * 7.875,
-  134:$spacer * 8.375,
+  
   // 134px
 
 );
@@ -97,13 +125,18 @@ $spacers: (
 $grid-breakpoints: map-merge($grid-breakpoints, $custom-grid-breakpoints);
 $container-max-widths: map-merge($container-max-widths, $custom-container-max-widths);
 $theme-colors: map-merge($theme-colors, $custom-theme-colors);
+$font-sizes: map-merge($font-sizes, $custom-font-size);
+
 
 //  Bootstrap Core Import
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
+
+
+
 //  Custom Styles
 @import './header';
-@import'./footer';
+@import './footer';
 
 
 
@@ -112,15 +145,15 @@ $theme-colors: map-merge($theme-colors, $custom-theme-colors);
 
 
 // Custom Utilities
-.font-family-rubik {
+.font-rubik {
   font-family: "Rubik", sans-serif;
 }
 
-.font-family-federo {
+.font-federo {
   font-family: "Federo", sans-serif;
 }
 
-.font-family-roboto {
+.font-roboto {
   font-family: $font-family-base;
 }
 
@@ -133,6 +166,7 @@ a {
 .btn-primary {
   background-color: $primary !important;
   padding: 0.875rem 2.688rem !important;
+  font-family: $headings-font-family;
   color: white;
   &:hover {
     background-color: darken($primary, 5%) !important;
@@ -175,4 +209,5 @@ a {
 .ice-whisper {
     background: linear-gradient(180deg, #F0F8FF 0%, rgba(240, 248, 255, 0) 100%);
 }
+
 
