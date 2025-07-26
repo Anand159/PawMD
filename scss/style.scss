@@ -56,9 +56,8 @@ $custom-font-size: (
 $font-family-base: "Roboto", sans-serif;
 $headings-font-family: "Federo", sans-serif;
 
-$headings-color: black;
 $headings-font-weight: 400;
-
+$body-color:   #000;
 
 
 // Spacing
@@ -71,57 +70,38 @@ $spacers: (
   4: $spacer * 1.5,
   5: $spacer * 3,
 
-  10:$spacer * 0.625,
-  12:$spacer * 0.75,
-  15:$spacer * 0.938,
-  37:$spacer * 2.313,
-  49:$spacer * 3.063,
-  75:$spacer * 4.688, 
+  10: $spacer * 0.625, // 10px
+  12: $spacer * 0.75,  // 12px
+  15: $spacer * 0.938, // 15px
+  20: $spacer * 1.25,  // 20px
+  25: $spacer * 1.563, // 25px
+  28: $spacer * 1.75,  // 28px
+  30: $spacer * 1.875, // 30px
+  37: $spacer * 2.313, // 37px
+  40: $spacer * 2.5,   // 40px
+  44: $spacer * 2.75,  // 44px
+  48: $spacer * 3,     // 48px
+  49: $spacer * 3.063, // 49px
+  50: $spacer * 3.125, // 50px
+  55: $spacer * 3.38,  // 55px
+  60: $spacer * 3.75,  // 60px
+  75: $spacer * 4.688, // 75px
+  82: $spacer * 5.125, // 82px
+  86: $spacer * 5.375, // 86px
+  90: $spacer * 5.625, // 90px
+  100: $spacer * 6.25, // 100px
+  126: $spacer * 7.875,// 126px
+  134: $spacer * 8.375, // 134px
 
-  20:$spacer * 1.25,
-  28:$spacer * 1.75,
+  14: $spacer * 0.875,
+  43: $spacer * 2.688,
 
-  30:$spacer * 1.875,
-
-  82:$spacer * 5.125,
-
-  134:$spacer * 8.375,
+  35:$spacer * 2.188,
 
 
-  55:$spacer * 3.38,
-
-  60:$spacer * 3.75,
-  
-
-
-
-
-
-
-
-
-  // 10px
-  
-
-  
-  // 20px
-  25:$spacer * 1.563,
-  // 25px
-  40:$spacer * 2.5,
-  // 40px
-  48:$spacer * 3,
-  // 48px
-  
-  // 55px
-  
-  // 82px
-  100: $spacer * 6.25,
-  // 100px
-  126:$spacer * 7.875,
-  
-  // 134px
 
 );
+
 
 // Bootstrap Functions + Variables
 @import '../node_modules/bootstrap/scss/functions';
@@ -146,27 +126,26 @@ $font-sizes: map-merge($font-sizes, $custom-font-size);
 @import'./service';
 @import'./why-choose-us';
 @import'./what’s-next';
+@import'./about';
+@import'./contact';
 @import './footer';
 
 
 
 
 
-
-
-// Custom Utilities
+// font family 
 .font-rubik {
   font-family: "Rubik", sans-serif;
 }
-
 .font-federo {
   font-family: "Federo", sans-serif;
 }
-
 .font-roboto {
   font-family: $font-family-base;
 }
 
+// button & links
 a {
   text-decoration: none;
   color: inherit;
@@ -174,27 +153,26 @@ a {
 
 
 .btn-primary {
-  background-color: $primary !important;
-  padding: 0.875rem 2.688rem !important;
   font-family: $headings-font-family;
   color: white;
   &:hover {
-    background-color: darken($primary, 5%) !important;
-
+    color: white;
   }
 }
+
 
 .btn-secondary {
   background-color: #D6FACE !important;
   padding: 0.875rem 2.688rem !important;
   color: #124C5F !important;
-
   &:hover {
     background-color: darken(#D6FACE, 5%) !important;
 
   }
 }
 
+
+// Custom Utilities
 
 .z-n-1 {
   z-index: -1;
@@ -212,15 +190,24 @@ a {
 
 
 // bg-colors
-.silk-fade{
+.bg-silk-fade{
     background: linear-gradient(180deg, #FFFFF6 0%, rgba(251, 251, 251, 0) 100%);
 }
 
-.ice-whisper {
+.bg-ice-whisper {
     background: linear-gradient(180deg, #F0F8FF 0%, rgba(240, 248, 255, 0) 100%);
 }
 
 .bg-light-green-fade {
     background: linear-gradient(180deg, rgba(135, 239, 111, 0.3) 0%, #FFFFFF 50%);
 }
+
+.what-next-green-highlight{
+  background: linear-gradient(90deg, rgba(135, 239, 111, 0.3) 15%, rgba(255, 255, 255, 0) 34.19%);
+
+}
+
+
+
+
 

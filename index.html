@@ -22,31 +22,41 @@
 </head>
 
 <body>
-  <!-- Navbar -->
+
+  <!-- Header -->
   <header>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg ">
       <div class="container font-federo">
-        <a class="navbar-brand" href="#" aria-label="paw-logo">
+
+        <!-- Logo -->
+        <a class="navbar-brand" href="http://127.0.0.1:5500/index.html" aria-label="paw-logo">
           <img src="./image/paw-logo.svg" alt="Paw Logo" />
         </a>
+
+        <!-- Toggle button for mobile nav -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
           aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
+        <!-- Collapsible Nav Links -->
         <div class="collapse navbar-collapse" id="navbarScroll">
           <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
             <li class="nav-item">
-              <a class="nav-link" href="#">Our services</a>
+              <a class="nav-link" href="#service">Our services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About us</a>
+              <a class="nav-link" href="http://127.0.0.1:5500/about.html">About us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="http://127.0.0.1:5500/contact.html">Contact</a>
             </li>
           </ul>
+
+          <!-- Auth Buttons -->
           <div class="d-flex gap-20">
-            <a class="btn-primary rounded" href="#">Sign in</a>
+            <a class="btn btn-primary py-14 px-43" href="#">Sign in</a>
             <a class="btn-secondary rounded" href="#">Register</a>
           </div>
         </div>
@@ -54,22 +64,30 @@
     </nav>
   </header>
 
+  <!-- Main -->
   <main>
+
     <!-- Hero Section -->
     <section class="hero-banner position-relative  mb-55">
-      <img src="./image/bg-hero-banner.webp" class="position-absolute img-fluid z-n-1 d-none d-lg-block " alt="">
+      <img src="./image/bg-hero-banner.webp" class="position-absolute img-fluid z-n-1 d-none d-lg-block "
+        alt="background hero banner">
       <div class="container">
         <div
-          class="row justify-content-lg-between justify-content-center text-lg-start text-center row-gap-55 align-items-center">
-          <div class="col-lg-6 order-last order-lg-first ">
+          class="row justify-content-lg-between justify-content-center text-lg-start text-center row-gap-50 align-items-center">
+
+          <!-- Text Content -->
+          <div class="col-lg-6 order-last order-lg-first">
             <h1 class="mb-20 ">Taking care for <span class="d-block">your Smart Dog!</span></h1>
             <p class="fs-8 text-charcoal-black mb-55">PawMD is more than just a device—it's your <span
                 class="d-block">pet's
                 personalized health companion</span></p>
-            <a class="btn-primary rounded " href="#">Sign in <i class="bi bi-arrow-right ms-2"></i></a>
+            <a class="btn btn-primary py-20 px-35"> Explore More <i class="bi bi-chevron-right ms-2 "></i></a>
           </div>
-          <div class="col-lg-6 position-relative">
-            <img src="./image/banner-vector.webp" alt="Pet Vector" class="pet-vector position-absolute  img-fluid" />
+
+          <!-- Image Content -->
+          <div class="col-lg-6 d-flex flex-column position-relative justify-content-center">
+            <img src="./image/banner-vector.webp" alt="Pet Vector"
+              class="pet-vector position-absolute d-none d-md-block img-fluid" />
             <img src="./image/banner-dog.webp" alt="Pet Dog" class="img-fluid" />
           </div>
         </div>
@@ -77,22 +95,29 @@
     </section>
 
     <!-- Service -->
-    <section class="service py-55 overflow-x-hidden ">
+    <section class="service py-55 overflow-x-hidden" id="service">
       <div class="container ">
-        <h2>Service</h2>
+
+        <h2 class="fs-3">Service</h2>
         <div class="border-color-1 mb-55"></div>
         <div
           class="row justify-content-xl-between justify-content-lg-evenly justify-content-around text-start row-gap-60">
+
+          <!-- Service Card 1 -->
           <div class="service-card position-relative col-12 col-lg-3">
             <img src="./image/real-time.svg" class="mb-20" alt="">
             <h3 class="fs-4">Real-Time Pet <span class="d-block">Monitoring</span></h3>
             <img src="./image/services-pet.webp" class="service-pet  position-absolute " alt="">
           </div>
+
+          <!-- Service Card 2 -->
           <div class="service-card position-relative col-12 col-lg-3 bg-light-green-fade">
             <img src="./image/al.svg" class="mb-20" alt="">
             <h3 class="fs-4">AI-Powered <span class="d-block">Health Insights</span></h3>
             <img src="./image/services-cat.webp" class="service-pet position-absolute " alt="">
           </div>
+
+          <!-- Service Card 3 -->
           <div class="service-card position-relative col-12 col-lg-3">
             <img src="./image/vet-access.svg" class="mb-20" alt="">
             <h3 class="fs-4">24/7 Vet <span class="d-block">Access</span></h3>
@@ -100,14 +125,19 @@
           </div>
         </div>
       </div>
+
       <div class="container pt-134">
         <div class="row justify-content-between align-items-center">
+
+          <!-- Left Image -->
           <div class="col-lg-5">
             <img src="./image/service-big-dog.webp" class="img-fluid" alt="">
           </div>
+
+          <!-- Right Text Content -->
           <div class="col-lg-5 position-relative">
             <img src="./image/big-paw.webp" alt=""
-              class="paw position-absolute top-0 start-100 translate-middle z-n-1 img-fluid " />
+              class="paw position-absolute top-0 start-100 translate-middle z-n-1 img-fluid d-none d-md-block " />
             <h2 class="fs-3 mb-40">Your Pet’s Health, In the Palm of Your Hand</h2>
             <p class="fs-8 text-graphite-gray">PawMd is a next-gen pet healthcare platform combining wearable tech,
               AI-driven insights, and telemedicine to ensure your furry friends stay healthy, happy, and safe—anytime,
@@ -116,11 +146,120 @@
         </div>
     </section>
 
-  
-  </main>
+    <!-- Why Choose Us  -->
+    <section class="why-choose-us">
+      <div class="container mb-100">
 
+        <h2 class="fs-3">Why Choose Us</h2>
+        <div class="border-color-1 mb-55"></div>
+        <div class="row justify-content-md-between justify-content-evenly text-center g-10">
+
+          <!-- Card 1 -->
+          <div class="col-12 why-card col-md-6 col-xl-3">
+            <img src="./image/real-time.svg" class="mb-15" alt="">
+            <h3 class="fs-6 mb-20">Catch Health Issues Early</h3>
+            <p class="fs-10">Smart collars & AI constantly monitor and analyze your pet’s vitals and behavior to detect
+              early warning signs.</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="why-card col-12  col-md-6 col-xl-3 bg-light-green-fade">
+            <img src="./image/real-time.svg" class="mb-15" alt="">
+            <h3 class="fs-6 mb-20">Instant Vet Access, <span class="d-block">24/7</span></h3>
+            <p class="fs-10">Book virtual consultations, get digital prescriptions, and chat with certified vets—without
+              stepping outside.</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="why-card col-12  col-md-6 col-xl-3">
+            <img src="./image/real-time.svg" class="mb-15" alt="">
+            <h3 class="fs-6 mb-20">All Records. One Dashboard.</h3>
+            <p class="fs-10">From medical history to medication tracking and growth charts, PawPulse keeps everything
+              organized and accessible.</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="why-card col-12  col-md-6 col-xl-3 bg-light-green-fade">
+            <img src="./image/real-time.svg" class="mb-15" alt="">
+            <h3 class="fs-6 mb-20">Peace of Mind for Every Pet Parent</h3>
+            <p class="fs-10">Real-time alerts, GPS tracking, and automated care reminders keep you in the know—even when
+              you’re away.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Section -->
+      <div class="bg-ice-whisper pt-25 pb-48">
+        <div class="container">
+          <div class="row justify-content-between align-items-center gy-4">
+
+            <!-- Text Content -->
+            <div class="col-12 col-lg-5 order-2 order-lg-1">
+              <h3>All-in-One Pet Care,<span class="d-block">Seamless & Smart</span> </h3>
+              <p class="fs-8 text-graphite-gray">From secure multi-user access and real-time health dashboards to effortless appointment booking and
+                integrated communications—PawMed makes pet care simpler, smarter, and stress-free.</p>
+            </div>
+
+            <!-- Image Content -->
+            <div class="col-12 col-lg-5 order-1 order-lg-2 text-center">
+              <img src="./image/choose-us-dog-img.webp" class="img-fluid" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What's Next -->
+    <section class="what-next pt-134 pb-lg-126 pb-50 bg-silk-fade overflow-x-hidden">
+      <div class="container position-relative ">
+
+        <!-- Decorative Paw Icon -->
+        <!-- <img src="./image/small-paw.webp" alt="" class="position-absolute  img-fluid small-paw-dark" /> -->
+
+        <div class="row justify-content-between align-items-center row-gap-100">
+
+          <!-- Dog Image -->
+          <div class="col-lg-5">
+            <img src="./image/next-dog.webp" alt="" class="img-fluid " />
+          </div>
+
+          <!-- What's Next Content -->
+          <div class="col-lg-5">
+            <h2 class="fs-3 font-rubik">What’s Next</h2>
+            <div class="border-color-2 mb-55"></div>
+
+            <!-- Card 1 -->
+            <div class="next-card d-flex align-items-center gap-3 rounded mb-20 ">
+              <img src="./image/real-time.svg" class="img-icon" alt="">
+              <p class="fs-6 mb-0">More smart device integrations</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="next-card d-flex align-items-center gap-3 rounded mb-20  what-next-green-highlight">
+              <img src="./image/real-time.svg" class="img-icon" alt="">
+              <p class="fs-6 mb-0">AI model enhancements</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="next-card d-flex align-items-center gap-3 rounded mb-20">
+              <img src="./image/real-time.svg" class="img-icon" alt="">
+              <p class="fs-6 mb-0">Blockchain-backed medical records</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="next-card d-flex align-items-center gap-3 rounded mb-20  what-next-green-highlight">
+              <img src="./image/real-time.svg" class="img-icon" alt="">
+              <p class="fs-6 mb-0">International vet partnerships</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
   <!-- Footer -->
   <footer class="bg-soft-ice">
+
+    <!-- Newsletter Subscription Section -->
     <section class="footer-top pt-75 mb-75 ">
       <div class="container text-center">
         <h2 class="fs-3 mb-37">Subscribe to Our Newsletter for <span class="d-block"> Latest Updates </span></h2>
@@ -131,15 +270,19 @@
             </span>
             <input type="email" class="form-control border-0" placeholder="Type your email address here" />
           </div>
-          <a class="btn-primary rounded">
+          <a class="btn btn-primary py-20 px-35">
             Submit now <i class="bi bi-chevron-right ms-2 "></i>
           </a>
         </div>
       </div>
     </section>
+
+    <!-- Contact & Social Links -->
     <section class="footer-bottom mb-49">
       <div class="container">
         <div class="row justify-content-between row-gap-5">
+
+          <!-- Social Links -->
           <div class="col-lg-6">
             <h3 class="fs-9 fw-bold mb-15 font-rubik">Follow on social</h3>
             <div class="d-flex gap-28">
@@ -150,7 +293,8 @@
             </div>
           </div>
 
-          <div class="col-lg-6 d-flex justify-content-between gap-28">
+          <!-- Contact Info -->
+          <div class="contact-info col-lg-6 d-flex justify-content-between gap-28">
             <div>
               <h3 class="fs-9 fw-bold mb-12 font-rubik">Boarding & Day care</h3>
               <p class="text-primary fs-6 fw-bold mb-12">(+91)-00000 00000</p>
@@ -165,18 +309,19 @@
         </div>
       </div>
     </section>
+
+    <!-- Footer Bottom Navigation -->
     <section class="footer-copyright border-top pt-3">
       <div class="container d-flex justify-content-between  align-items-center flex-wrap ">
         <p>&copy; all rights reserved & design with love by bharat</p>
         <ul class="list-unstyled d-flex fs-9 column-gap-30 font-federo">
-          <li><a href="#" class="footer-link">Our Services</a></li>
-          <li><a href="#" class="footer-link">About Us</a></li>
+          <li><a href="#service" class="footer-link">Our Services</a></li>
+          <li><a href="http://127.0.0.1:5500/about.html" class="footer-link">About Us</a></li>
           <li><a href="#" class="footer-link">FAQ</a></li>
-          <li><a href="#" class="footer-link">Contact</a></li>
+          <li><a href="http://127.0.0.1:5500/contact.html" class="footer-link">Contact</a></li>
         </ul>
       </div>
     </section>
-
   </footer>
 
   <!-- Bootstrap JS -->
