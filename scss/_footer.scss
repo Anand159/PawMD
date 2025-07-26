@@ -17,7 +17,6 @@
   box-shadow: none;
 }
 
-
 .social-icon {
   background-color: #87EF6F;
   padding-inline: 0.875rem; //14px
@@ -51,8 +50,9 @@
 @media(max-width: 576px){
   .contact-info{
     .fs-9{
-      font-size: 14px !important;
+      font-size: 0.875rem !important;
     }
   }
 }
+
 

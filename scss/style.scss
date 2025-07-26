@@ -72,13 +72,16 @@ $spacers: (
 
   10: $spacer * 0.625, // 10px
   12: $spacer * 0.75,  // 12px
+  14: $spacer * 0.875, // 14px
   15: $spacer * 0.938, // 15px
   20: $spacer * 1.25,  // 20px
   25: $spacer * 1.563, // 25px
   28: $spacer * 1.75,  // 28px
   30: $spacer * 1.875, // 30px
+  35: $spacer * 2.188,  // 35px
   37: $spacer * 2.313, // 37px
   40: $spacer * 2.5,   // 40px
+  43: $spacer * 2.688, // 43px
   44: $spacer * 2.75,  // 44px
   48: $spacer * 3,     // 48px
   49: $spacer * 3.063, // 49px
@@ -92,14 +95,15 @@ $spacers: (
   100: $spacer * 6.25, // 100px
   126: $spacer * 7.875,// 126px
   134: $spacer * 8.375, // 134px
-
-  14: $spacer * 0.875,
-  43: $spacer * 2.688,
-
-  35:$spacer * 2.188,
+);
 
 
-
+$position-values: (
+  0: 0,
+  15: 15%,
+  30: 30%,
+  50: 50%,
+  100: 100%
 );
 
 
@@ -128,6 +132,7 @@ $font-sizes: map-merge($font-sizes, $custom-font-size);
 @import'./what’s-next';
 @import'./about';
 @import'./contact';
+@import'./built-love';
 @import './footer';
 
 
@@ -206,8 +211,4 @@ a {
   background: linear-gradient(90deg, rgba(135, 239, 111, 0.3) 15%, rgba(255, 255, 255, 0) 34.19%);
 
 }
-
-
-
-
 

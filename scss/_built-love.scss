@@ -1,0 +1,25 @@
+.built-with-love::before{
+  content: '';
+  position: absolute;
+  top: 400px;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background-image: url(../image/small-paw.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (max-width: 1200px) {
+  .built-with-love::before {
+    top: 350px;
+  }
+}
+
+@media (max-width: 992px) {
+  .built-with-love::before {
+    background: none;
+  }
+}
+
+
